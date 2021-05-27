@@ -9,11 +9,11 @@ class ActionProvider {
         this.updateChatbotState(greetingMessage)
     }
 
-    handleJavascriptList = () => {
+    handleAccountOpeningList = () => {
         const message = this.createChatBotMessage(
-            "Fantastic, I've got the following resources for you on Javascript:",
+            "Fantastic, I've got the following resources for you on Account Opening:",
             {
-                widget: "javascriptLinks",
+                widget: "AOLinks",
             }
         );
 

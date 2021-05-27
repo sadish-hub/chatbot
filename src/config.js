@@ -16,27 +16,32 @@ const config = {
             widgetFunc: (props) => <LearningOptions {...props} />,
         },
         {
-            widgetName: "javascriptLinks",
+            widgetName: "AOLinks",
             widgetFunc: (props) => <LinkList {...props} />,
             props: {
                 options: [
                     {
-                        text: "Introduction to JS",
-                        url:
-                            "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/",
+                        text: "Goal Calculator",
+                        url: "https://frontendmasters.com",
                         id: 1,
                     },
                     {
-                        text: "Mozilla JS Guide",
+                        text: "Risk Tolerance Questionaire",
                         url:
-                            "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+                            "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/",
                         id: 2,
                     },
                     {
-                        text: "Frontend Masters",
-                        url: "https://frontendmasters.com",
+                        text: "Model and the securities",
+                        url:
+                            "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
                         id: 3,
                     },
+                    {
+                        text: "Docusign",
+                        url: "https://frontendmasters.com",
+                        id: 4,
+                    }
                 ],
             }
         },

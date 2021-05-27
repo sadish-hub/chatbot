@@ -5,14 +5,14 @@ import "./LearningOptions.css";
 const LearningOptions = (props) => {
     const options = [
         {
-            text: "Javascript",
-            handler: props.actionProvider.handleJavascriptList,
+            text: "Account Opening",
+            handler: props.actionProvider.handleAccountOpeningList,
             id: 1,
         },
-        { text: "Data visualization", handler: () => { }, id: 2 },
-        { text: "APIs", handler: () => { }, id: 3 },
-        { text: "Security", handler: () => { }, id: 4 },
-        { text: "Interview prep", handler: () => { }, id: 5 },
+        { text: "Money Movement", handler: () => { }, id: 2 },
+        { text: "Transfer Of Assets", handler: () => { }, id: 3 },
+        { text: "Brokerage Vault", handler: () => { }, id: 4 },
+        { text: "Accounts", handler: () => { }, id: 5 },
     ];
 
     const optionsMarkup = options.map((option) => (
