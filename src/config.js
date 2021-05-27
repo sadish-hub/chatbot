@@ -5,6 +5,7 @@ import LearningOptions from "./components/LearningOptions/LearningOptions";
 import LinkList from "./components/LinkList/LinkList";
 
 const config = {
+    botName: "AMP Helper",
     initialMessages: [
         createChatBotMessage("Hi, I'm here to help. What do you want to learn?", {
             widget: "learningOptions",
