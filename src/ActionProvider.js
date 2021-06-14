@@ -5,7 +5,7 @@ class ActionProvider {
     }
 
     greet() {
-        const greetingMessage = this.createChatBotMessage("Hi, friend.")
+        const greetingMessage = this.createChatBotMessage("Hi, Please pick one of the above to know more!")
         this.updateChatbotState(greetingMessage)
     }
 
@@ -14,6 +14,17 @@ class ActionProvider {
             "Fantastic, I've got the following resources for you on Account Opening:",
             {
                 widget: "AOLinks",
+            }
+        );
+
+        this.updateChatbotState(message);
+    };
+
+    handleAODescription = (desc) => {
+        const message = this.createChatBotMessage(
+            `More details about ${desc}:`,
+            {
+                widget: "AODescriptionLinks",
             }
         );
 
@@ -29,7 +40,7 @@ class ActionProvider {
 
         this.setState(prevState => ({
             ...prevState, messages: [...prevState.messages, message]
-        }))
+        }));
     }
 }
 
