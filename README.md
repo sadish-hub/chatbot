@@ -5,3 +5,6 @@ This project was created based on the URL https://www.freecodecamp.org/news/how-
 ## Customization
 
 Customization should be done based on the input from AMP research. We would need to create a few components. We might need a NLP model to accomodate complex requirements. At this moment, we would like to keep it simple.
+
+# Update
+ - Added Description Component
